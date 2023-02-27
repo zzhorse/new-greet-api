@@ -1,3 +1,8 @@
-Name: greet-api
+Name: greet-api2
 Host: 0.0.0.0
-Port: 8888
+Port: 8880
+UserRpc:
+  Target: consul://localhost:8500/greet.rpc
+Consul:
+  Host: localhost:8500
+  Key: api.rpc
